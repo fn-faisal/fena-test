@@ -4,8 +4,7 @@ Fena Test ( Nextjs, React, Kafka, Bull Queues )
 
 The project is setup using docker compose.
 
-Copy the ```.env.example``` file to ```.env``` file and run the compose up command.
- 
+Copy the ```.env.example``` file to ```.env``` file and run the compose up command. 
 
 ```
 docker-compose up
