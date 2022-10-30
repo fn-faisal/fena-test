@@ -65,7 +65,7 @@ function sendMail(payload) {
 nextApp.prepare().then(async () => {
   const kafka = new Kafka({
     clientId: process.env.KAFKA_CLIENT_ID,
-    brokers: (process.env.KAFKA_BROKERS || [] ).split(',') 
+    brokers: (process.env.KAFKA_BROKERS || '' ).split(',') 
   });
 
   const consumer = kafka.consumer({ groupId: 'emails-group' });
